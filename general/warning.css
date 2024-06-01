@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  position: relative;
+  margin: 5%;
+  text-align: center;
+}
+p {
+  color: white;
+  font-size: 2rem;
+}
+.container-runner {
+  margin-top: 5%;
+  margin-left: -5%;
+  height: 25vh;
+  background-color: white;
+  overflow: hidden;
+}
+
+#runner1 {
+  animation: moveForward1 1s infinite linear;
+}
+
+@keyframes moveForward1 {
+  0% {
+    transform: translate(-50px);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(150px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(150px);
+    opacity: 0;
+  }
+}
+#runner2 {
+  margin-left: -460px;
+  animation: moveForward2 1s infinite linear;
+}
+@keyframes moveForward2 {
+  0% {
+    transform: translate(0);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(150px);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(150px);
+    opacity: 0;
+  }
+}
+
+#runner3 {
+  margin-left: -310px;
+  animation: moveForward3 1s infinite linear;
+}
+@keyframes moveForward3 {
+  0% {
+    transform: translate(0);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(150px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(150px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(150px);
+    opacity: 0;
+  }
+}
+#runner4 {
+  margin-left: -160px;
+  animation: moveForward4 1s infinite linear;
+}
+@keyframes moveForward4 {
+  0% {
+    transform: translate(0);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(150px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(150px);
+    opacity: 1;
+  }
+}
+
+#buggy {
+  position: absolute;
+  top: 28%;
+  left: -10%;
+  border-radius: 50%;
+  z-index: 2;
+}
+#grave {
+  position: absolute;
+  top: 28%;
+  right: -7%;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: #fff;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #a1bfe8 0 -20px 10px inset;
+  box-sizing: border-box;
+  color: #000000;
+  letter-spacing: -0.25px;
+  padding: 1rem 1.4rem;
+  text-align: center;
+  transition: all 0.15s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #9bd83f;
+  box-shadow: #1c910f 0 -6px 8px inset;
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
+
+.hide {
+  display: none;
+}
+.fadeIn {
+  opacity: 0;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

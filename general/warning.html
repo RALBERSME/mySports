@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="warning.css" />
+    <title>Warning!</title>
+  </head>
+  <body>
+    <div class="container">
+      <p>Think about this...</p>
+      <br />
+      <p>
+        If you take your life as a race to reach the finish line as fast as
+        possible:
+      </p>
+      <p>Don't forget what the finish line of life is!</p>
+      <img
+        class="imgFadeIn fadeIn"
+        id="buggy"
+        src="https://cdn.pixabay.com/photo/2021/11/22/03/20/baby-6815689_640.jpg"
+        alt="buggy"
+        width="360px"
+        height="360px"
+      />
+      <img
+        class="imgFadeIn fadeIn"
+        id="grave"
+        src="https://cdn.pixabay.com/photo/2024/03/23/10/09/tomb-8651155_640.png"
+        alt="grave"
+        width="360px"
+        height="360px"
+      />
+      <div class="container-runner">
+        <img
+          id="runner1"
+          class="runner"
+          src="../Images/cartoon-7826922_640.png"
+          alt="runner"
+        />
+        <img
+          id="runner2"
+          class="runner"
+          src="../Images/cartoon-7826922_640.png"
+          alt="runner"
+        />
+        <img
+          id="runner3"
+          class="runner"
+          src="../Images/cartoon-7826922_640.png"
+          alt="runner"
+        />
+        <img
+          id="runner4"
+          class="runner"
+          src="../Images/cartoon-7826922_640.png"
+          alt="runner"
+        />
+      </div>
+      <br /><br /><br />
+      <p class="hide">
+        Do you really want to end up in a wooden box sooner? <br />Or would you
+        get more out of life if you used your time wisely, i.e. put the focus on
+        <bold>PURPOSE</bold>?
+      </p>
+      <br />
+      <div class="btnFadeIn fadeIn">
+        <a class="btn" roll="button" href="general.html">
+          Back to general page
+        </a>
+      </div>
+    </div>
+  </body>
+  <script>
+    const pElements = document.querySelectorAll("p");
+    const imgElements = document.querySelectorAll(".imgFadeIn");
+    const btnFadeIn = document.querySelector(".btnFadeIn");
+    setTimeout(() => {
+      for (let pElement of pElements) {
+        pElement.classList.remove("hide");
+      }
+      for (let imgElement of imgElements) {
+        imgElement.style.animation = "fadeIn 2s 0s linear forwards";
+      }
+      btnFadeIn.style.animation = "fadeIn 1s 0s linear forwards";
+    }, 5000);
+  </script>
+</html>

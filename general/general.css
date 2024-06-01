@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  min-height: 100vh;
+  background: #252839;
+  background-image: url("../Images/summer-1559447_1920.jpg");
+  background-position: 50% 43%;
+  background-repeat: no-repeat;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100%;
+  margin: 2.5%;
+}
+.container-right {
+}
+ul.left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+li {
+  position: relative;
+  list-style: none;
+}
+
+a.left {
+  position: relative;
+  font-size: 4em;
+  text-decoration: none;
+  letter-spacing: 2px;
+  line-height: 2em;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgb(18, 18, 201);
+}
+#getback {
+  color: rgb(240, 240, 181);
+  -webkit-text-stroke: 2.5px rgb(43, 132, 74);
+}
+a.left:before {
+  content: attr(data-text);
+  position: absolute;
+  color: #129187;
+  border-right: 8px dashed #129187;
+  -webkit-text-stroke: 1px #129187;
+  width: 0%;
+  overflow: hidden;
+  transition: 1s;
+}
+
+a.left:hover:before {
+  width: 100%;
+  transform: rotateX(45deg);
+}
+
+ul.right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  gap: 30px;
+}
+a.right {
+  position: relative;
+  font-size: 4em;
+  text-decoration: none;
+  letter-spacing: 2px;
+  line-height: 2em;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgb(18, 18, 201);
+}
+a.right:before {
+  content: attr(data-text);
+  position: absolute;
+  color: transparent;
+  border-right: 8px dashed #129187;
+  -webkit-text-stroke: 1px #129187;
+  width: -100%;
+  overflow: hidden;
+  transition: 1s;
+}
+
+a.right:hover:before {
+  border-left: 8px dashed #129187;
+  border-right: none;
+  -webkit-text-stroke: none;
+  width: 100%;
+  transform: rotateX(45deg);
+  color: #129187;
+  padding-left: none;
+}
