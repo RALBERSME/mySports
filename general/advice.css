@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+  height: 100%;
+}
+.blackPile {
+  height: 100%;
+  width: 95%;
+  background-color: black;
+  padding: 5px;
+}
+.left {
+  padding: 10%;
+  font-size: 2rem;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: rgba(238, 191, 253, 0.3);
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #c865f0 0 -10px 10px inset;
+  box-sizing: border-box;
+  color: #000000;
+  letter-spacing: -0.25px;
+  padding: 1rem 1.4rem;
+  text-align: center;
+  transition: all 0.15s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  background-color: rgb(247, 183, 160);
+  box-shadow: orangered 0 -6px 8px inset;
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
+.agreeBtn {
+  text-align: center;
+}

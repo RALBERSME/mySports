@@ -47,10 +47,7 @@ a.left {
   color: transparent;
   -webkit-text-stroke: 1.5px rgb(18, 18, 201);
 }
-#getback {
-  color: rgb(240, 240, 181);
-  -webkit-text-stroke: 2.5px rgb(43, 132, 74);
-}
+
 a.left:before {
   content: attr(data-text);
   position: absolute;
@@ -104,4 +101,17 @@ a.right:hover:before {
   transform: rotateX(45deg);
   color: #129187;
   padding-left: none;
+}
+#getback {
+  color: rgb(240, 240, 181);
+  -webkit-text-stroke: 2.5px rgb(43, 132, 74);
+}
+#getAdvice {
+  color: rgb(248, 162, 131);
+  -webkit-text-stroke: 2.5px rgb(123, 43, 132);
+}
+
+#getAdvice:hover:before {
+  border-left: 8px dashed rgb(123, 43, 132);
+  color: rgb(123, 43, 132);
 }
