@@ -90,6 +90,7 @@ a.right:before {
   /* -webkit-text-stroke: 1px #129187; */
   width: -100%;
   overflow: hidden;
+  line-height: 2em;
   transition: 1s;
 }
 
@@ -104,14 +105,14 @@ a.right:hover:before {
 }
 #getback {
   color: rgb(240, 240, 181);
-  -webkit-text-stroke: 2.5px rgb(43, 132, 74);
+  -webkit-text-stroke: 2px rgb(43, 132, 74);
 }
 #getAdvice {
-  color: rgb(248, 162, 131);
-  -webkit-text-stroke: 2.5px rgb(123, 43, 132);
+  color: rgb(242, 145, 109);
+  -webkit-text-stroke: 2px rgb(123, 43, 132);
 }
 
 #getAdvice:hover:before {
-  border-left: 8px dashed rgb(123, 43, 132);
+  border-right: 8px dashed rgb(123, 43, 132);
   color: rgb(123, 43, 132);
 }
