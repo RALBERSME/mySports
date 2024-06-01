@@ -82,14 +82,14 @@ a.right {
   line-height: 2em;
   text-transform: uppercase;
   color: transparent;
-  -webkit-text-stroke: 1.5px rgb(18, 18, 201);
+  -webkit-text-stroke: 1.5px rgba(18, 18, 201, 0.4);
 }
 a.right:before {
   content: attr(data-text);
   position: absolute;
   color: transparent;
   border-right: 8px dashed #129187;
-  -webkit-text-stroke: 1px #129187;
+  /* -webkit-text-stroke: 1px #129187; */
   width: -100%;
   overflow: hidden;
   transition: 1s;
