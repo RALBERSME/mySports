@@ -83,6 +83,7 @@ a.right {
   text-transform: uppercase;
   color: transparent;
   -webkit-text-stroke: 1.5px rgba(18, 18, 201, 0.4);
+  transform: rotateX(45deg);
 }
 a.right:before {
   content: attr(data-text);
