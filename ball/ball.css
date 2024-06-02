@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-image: url("../Images/dancing.jpg");
+  background-position: 60% 50%;
+  background-repeat: no-repeat;
+}
+.split {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+.container {
+  width: 100%;
+  padding: 10%;
+  height: 90%;
+  text-align: center;
+}
+
+.dancefloor {
+  margin: 0 auto;
+  width: 600px;
+  height: 800px;
+  background-image: linear-gradient(rgb(238, 242, 217), white);
+  border: 10px solid black;
+  border-radius: 15px;
+}
+
+#foot1 {
+  position: absolute;
+  top: -50%;
+  left: -21%;
+}
+#foot2 {
+  position: absolute;
+  top: -50%;
+  left: -33%;
+}
+
+.survey {
+  position: relative;
+  height: 100vh;
+  margin-left: 45%;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: yellow;
+  z-index: 10;
+}
+#dancer {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+ol {
+  margin-left: 25px;
+  padding-left: 20px;
+}
+h2 {
+  margin-top: 30%;
+}
+.survey li {
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+.survey li:hover {
+  color: orangered;
+  text-shadow: 1px 1px 1px white;
+  transform: translateY(2px) translateX(2px);
+}
+
+.btn {
+  margin-left: 15px;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: #fff;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: rgb(244, 244, 176) 0 -20px 10px inset;
+  box-sizing: border-box;
+  color: #000000;
+  letter-spacing: -0.25px;
+  padding: 0.6rem 1rem;
+  text-align: center;
+  transition: all 0.15s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(247, 247, 124);
+  box-shadow: rgb(140, 140, 59) 0 -6px 8px inset;
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
