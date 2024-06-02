@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+  font-family: "Poppings", sans-serif;
+  color: white;
+}
+.container {
+  margin: 5%;
+  margin-left: 10%;
+  justify-content: center;
+  height: 40%;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-left: -20%;
+}
+#typewriter {
+  color: white;
+  font-family: "Poppings", sans-serif;
+  font-size: 2rem;
+  position: relative;
+  padding-right: 0.6em;
+}
+#typewriter::after {
+  content: "|";
+  background-color: black;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  animation: typing 6s steps(155) infinite, cursor 0.5s infinite;
+}
+
+@keyframes typing {
+  to {
+    width: 0%;
+  }
+}
+@keyframes cursor {
+  50% {
+    color: transparent;
+  }
+}
+
+#pic {
+  margin-top: -12.5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: 50%;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: #fff;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: rgb(248, 206, 158) 0 -20px 10px inset;
+  box-sizing: border-box;
+  color: #000000;
+  letter-spacing: -0.25px;
+  padding: 0.6rem 1rem;
+  text-align: center;
+  transition: all 0.15s;
+  cursor: pointer;
+  margin-left: 46%;
+  margin-top: 5px;
+}
+
+.btn:hover {
+  background-color: rgb(235, 219, 201);
+  box-shadow: rgb(140, 104, 62) 0 -6px 8px inset;
+  transform: scale(1.1);
+  text-shadow: 1px 1px 1px white;
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
