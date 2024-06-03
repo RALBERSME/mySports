@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Seymour+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Seymour One", sans-serif;
+}
+
+body {
+  background-image: url("../Images/woman-7601196_1920.jpg");
+  background-position: center/cover;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+}
+.wave {
+  position: relative;
+  margin-left: 35%;
+  margin-top: 40%;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+h2 {
+  position: absolute;
+  text-align: center;
+  line-height: 500px;
+  font-size: 8rem;
+  text-transform: uppercase;
+  z-index: 5;
+}
+
+h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 1px #0e92cf;
+}
+
+h2:nth-child(2) {
+  top: -1px;
+  color: white;
+  animation: waving 1.5s ease-in-out infinite;
+}
+h2:nth-child(3) {
+  color: #15a6db;
+  animation: waving 0.5s ease-in-out infinite;
+}
+
+@keyframes waving {
+  0% {
+    clip-path: polygon(
+      0% 38%,
+      21% 40%,
+      38% 51%,
+      54% 57%,
+      75% 57%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0 49%,
+      16% 56%,
+      33% 55%,
+      55% 50%,
+      75% 42%,
+      100% 40%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  100% {
+    clip-path: polygon(
+      0% 38%,
+      21% 40%,
+      38% 51%,
+      54% 57%,
+      75% 57%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+.activities {
+  height: 100vh;
+}
+ul {
+  margin-top: 5%;
+  margin-left: -15%;
+}
+
+li {
+  margin-top: 15px;
+  list-style: none;
+  text-align: center;
+  background-color: #15a6db;
+  color: darkblue;
+  padding: 10px;
+  width: 90%;
+  border-radius: 5%;
+  cursor: pointer;
+  z-index: 12;
+}
+
+li:hover {
+  transform: translateX(5px) translateY(2px);
+  background-color: #6cc1df;
+}
+li:last-of-type {
+  margin-top: 40%;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Seymour One", sans-serif;
+  font-size: 1.5rem;
+}
