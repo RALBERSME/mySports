@@ -15,12 +15,12 @@ body {
   position: absolute;
   display: inline;
   background-color: rgba(0, 0, 0, 0.3);
-  color: orangered;
+  color: rgb(251, 174, 31);
   text-shadow: 2px 2px 5px red;
   font-size: 2rem;
   padding: 5px;
   border-radius: 5px;
-  animation: runfast 9s 2s ease-in-out forwards;
+  animation: runfast 9s 0.5s ease-in-out forwards;
 }
 
 @keyframes runfast {
