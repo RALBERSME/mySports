@@ -14,13 +14,15 @@ body {
 #run {
   position: absolute;
   display: inline;
+  left: 0;
+  top: 0;
   background-color: rgba(0, 0, 0, 0.3);
   color: rgb(251, 174, 31);
   text-shadow: 2px 2px 5px red;
   font-size: 2rem;
   padding: 5px;
   border-radius: 5px;
-  animation: runfast 9s 0.5s ease-in-out forwards;
+  animation: runfast 5s 0.5s ease-in-out forwards;
 }
 
 @keyframes runfast {
@@ -29,5 +31,17 @@ body {
   }
   100% {
     transform: scale(2) translateX(300px) translateY(150px);
+  }
+}
+
+.hand {
+  transform: rotate(90deg) translateX(-550px);
+}
+@keyframes showHand {
+  0% {
+    transform: rotate(90deg) translateY(550px);
+  }
+  100% {
+    transform: rotate(90deg) translateY(0px);
   }
 }
