@@ -12,4 +12,4 @@ question.addEventListener("mouseleave", () => {
 
 setTimeout(() => {
   details.classList.remove("hide");
-}, 5000);
+}, 3500);
