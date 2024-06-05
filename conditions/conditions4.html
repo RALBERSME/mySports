@@ -3,9 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="conditions4.css" />
     <title>Kom Ombo Temple</title>
   </head>
   <body>
-    HHHHHHHHUUU
+    <div class="top">
+      <img
+        class="crocodile hide"
+        alt="crocodile"
+        id="crocodile"
+        src="https://cdn.pixabay.com/photo/2023/10/21/19/18/ai-generated-8332283_960_720.png"
+      />
+      <canvas
+        class=""
+        id="myCanvas"
+        width="1500"
+        height="750"
+        style="border: 1px solid #000000"
+      >
+      </canvas>
+      <img src="../Images/diver.png" id="diver" />
+      <img src="../Images/loch.png" id="hole" class="hide" />
+      <div class="hiding"></div>
+      <p class="btn" id="btn1">click to start</p>
+      <p class="btn hide" id="btn2">
+        You are in Kom Ombo Temple. Which river is it on?
+      </p>
+      <input
+        class="hide"
+        id="btn2Input"
+        placeholder="write Nile, Amazonas or Danube + press enter"
+      />
+      <input
+        class="hide"
+        id="btn3Input"
+        placeholder="write upper or lower + press enter"
+      />
+      <input
+        class="hide"
+        id="btn4Input"
+        placeholder="write 4000, 6650 or 98070 + press enter"
+      /><input
+        class="hide"
+        id="btn5Input"
+        placeholder="write top or lower + press enter"
+      /><input
+        class="hide"
+        id="btn6Input"
+        placeholder="write cat, falcon or crocodile + press enter"
+      />
+      <input
+        class="hide"
+        id="btn7Input"
+        placeholder="write top or right or left + press enter"
+      />
+      <a class="opacityNone" roll="button" id="nextBtn" href="conditions5.html">
+        Ready for next adventure
+      </a>
+    </div>
+
+    <script src="conditions4.js"></script>
   </body>
 </html>
