@@ -201,8 +201,8 @@ btn5Input.addEventListener("change", () => {
   if (btn5Input.value === "lower") {
     hiding.style.left = "35%";
     hiding.style.width = "750px";
-    btn2.textContent =
-      "The temple is dedicated to the god Sobek. What kind of god is Sobek?";
+    btn2.textContent = `The temple is dedicated to the god Sobek. 
+      What kind of god is Sobek?`;
     diver.style.left = "22%";
     btn5Input.classList.add("hide");
     btn6Input.classList.remove("hide");
@@ -218,7 +218,7 @@ btn6Input.addEventListener("change", () => {
 });
 
 btn7Input.addEventListener("change", () => {
-  if (btn7Input.value === "left") {
+  if (btn7Input.value === "right") {
     crocodile.classList.remove("hide");
     hiding.style.backgroundColor = "transparent";
     diver.style.top = "-25%";
