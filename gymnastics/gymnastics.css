@@ -7,7 +7,7 @@
 body {
   height: 100vh;
   font-family: "Montserrat", sans-serif;
-  background-image: url("https://cdn.pixabay.com/photo/2014/03/25/15/24/cinema-296751_640.png");
+  background-image: url("../Images/cinema.png");
   background-size: 75% 120%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
