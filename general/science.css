@@ -89,8 +89,7 @@ h4 {
       rgba(38, 38, 38, 0.8),
       transparent
     ),
-    url("https://cdn.pixabay.com/photo/2024/05/07/21/04/ai-generated-8746791_640.png")
-      center no-repeat;
+    url("../Images/skelett.png") center no-repeat;
   background-size: cover;
 }
 
@@ -101,8 +100,7 @@ h4 {
       rgba(38, 38, 38, 0.8),
       transparent
     ),
-    url("https://cdn.pixabay.com/photo/2020/07/25/21/35/people-5437908_640.png")
-      center no-repeat;
+    url("../Images/peopleHeart.png") center no-repeat;
   background-size: contain;
 }
 
@@ -113,8 +111,7 @@ h4 {
       rgba(38, 38, 38, 0.8),
       transparent
     ),
-    url("https://cdn.pixabay.com/photo/2024/04/16/16/25/ai-generated-8700383_640.jpg")
-      center no-repeat;
+    url("../Images/catEye.jpg") center no-repeat;
   background-size: contain;
   background-position: 60% 80%;
 }
@@ -126,8 +123,7 @@ h4 {
       rgba(38, 38, 38, 0.8),
       transparent
     ),
-    url("https://cdn.pixabay.com/photo/2021/05/14/12/26/prisoner-6253261_640.jpg")
-      center no-repeat;
+    url("../Images/brainCell.png") center no-repeat;
   background-size: 60%;
   background-position: right;
 }

@@ -9,7 +9,7 @@ body {
   height: 100vh;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  background-image: url("https://cdn.pixabay.com/photo/2022/06/29/20/37/tired-7292553_1280.png");
+  background-image: url("../Images/plug.png");
   background-position: center/cover;
   background-repeat: repeat-x;
   overflow: hidden;
